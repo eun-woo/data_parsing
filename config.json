@@ -1,0 +1,24 @@
+{
+        "merge_head": 0,   /* 병합된 테이블의 몇 번째 행까지가 테이블의 헤드인지 알려주는 변수.. 0인 경우 테이블의 0번째 행까지가 헤드, 1인 경우 1번째 행까지가 헤드. */
+
+        "sen_num": 1,      /*  정보가json객체의몇번째 문장부터 시작되는 지 알려주는 변수. usage_title=false일 경우sen_num은 자동으로 0이 됨 */
+
+        "isAdded": false,  /*  단일의 문장이 결합되었는 지 여부를 나타냄 */
+
+        "isEmpty": false,  /* 해당 테이블이  빈 공백이 있는 셀이 있는 테이블인지 판단하는 변수. False인경우 공백이 없는 테이블임을 나타냄 */
+
+        "json_num": 0,     /* 처음으로 출력되는 json객체의 조번호 */
+
+        "p_num": 0,        /* xml의 p태그 리스트의 인덱스 번호를 나타냄 */
+
+        "begin_number": 1, /* 문서번호의 처음번호. 즉 문서번호가 1, 2, 3... 순으로증가 */
+
+        "max_sen": 10,     /* 최대 몇번째 까지의 문장들을 추가할 수 있는 지 알려주는 변수. usage_title이 false라면 자동으로 9가 됨 */
+
+        "combining_individual_sentence": true,  /* 단일의 떨어진 문장들을 결합할 것인지를 판단하는 변수. false이면 결합하지 않음. */
+
+        "usage_title":true  /* 문서제목을 json객체의  문장0과 조내용에 포합시킬 것인지를 판단하는변수. false이면 정보를 포함시 max_sen과 sen_num변수를 1 감소시킴 */
+
+
+        /* config파일에서 가변인자는 combining_individual_sentence와 usage_title, begin_number, max_sen로서, 그 외 변수는 값을 변화시키면 안됨 */
+}
